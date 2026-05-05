@@ -11,7 +11,7 @@ from .routers import (
     production, dashboard, rebalance, timestudy, iot, odoo,
 )
 from .schemas.common import HealthResponse
-from .seed.bootstrap import bootstrap_if_emptyh
+from .seed.bootstrap import bootstrap_if_empty
 
 logger = logging.getLogger("line_balancing")
 
