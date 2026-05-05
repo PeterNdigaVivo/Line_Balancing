@@ -11,7 +11,7 @@ from .routers import (
     production, dashboard, rebalance, timestudy, iot, odoo,
 )
 from .schemas.common import HealthResponse
-from .seed.bootstrap import bootstrap_if_empty
+from .seed.bootstrap import bootstrap_if_emptyh
 
 logger = logging.getLogger("line_balancing")
 
@@ -40,7 +40,7 @@ def create_app() -> FastAPI:
     )
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=settings.cors_origins,
+                                allow_origins=["https://line-balancing.vercel.app", "http://localhost:5173", "http://localhost:3000"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
