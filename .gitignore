@@ -41,3 +41,6 @@ coverage/
 backend/.venv/
 backend/.pytest_cache/
 *.tsbuildinfo
+
+# Odoo bytecode
+odoo/**/__pycache__/
